@@ -48,7 +48,7 @@ This backend server allows users to register, authenticate, and interact with we
 ## Architecture and Data Flow
 
 - **Backend:** Java 17+, Spring Boot, RESTful APIs, Spring Data repositories.
-- **Database:** MySQL/MariaDB (default schema: `635466`), JDBC connection.
+- **Database:** MySQL/MariaDB (default schema: `weather_schema`), JDBC connection.
 - **External APIs:**
   - [Open-Meteo](https://open-meteo.com/) for real-time weather data.
   - [Nominatim](https://nominatim.openstreetmap.org/) for city name and coordinate resolution.
@@ -70,7 +70,7 @@ This backend server allows users to register, authenticate, and interact with we
 2. **Database setup**
    - Start MySQL/MariaDB on `localhost:3306`.
    - Default user/password: `root`/`root` (you can change this in `src/main/resources/application.properties`).
-   - The default schema is `635466`. It will be created and initialized automatically if missing.
+   - The default schema is `weather_schema`. It will be created and initialized automatically if missing.
 
 3. **Build and run**
    ```sh
